@@ -111,8 +111,7 @@ main {
   background-color: #555;
 }
 
-/* 在手機上點擊後保持橘色背景 */
-.back_to_top_button:focus {
+.back_to_top_button.clicked {
   background-color: #FF9800;
 }
 

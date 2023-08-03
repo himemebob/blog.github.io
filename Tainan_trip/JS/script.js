@@ -43,9 +43,13 @@ window.addEventListener('load', function() {
   // TOP按鈕點擊回到頂部
   btn.addEventListener('click', function(e) {
     e.preventDefault();
-    setTimeout(function() {
-      btn.classList.remove("hover");
-    }, 500);
+    backButton.addEventListener("click", function() {
+      // 在點擊事件後，添加一個 CSS class 來刪除按鈕上的 hover 狀態
+      backButton.classList.add("clicked");
+      // 在0.5秒後，移除這個 CSS class，讓按鈕回到初始狀態
+      setTimeout(function() {
+        backButton.classList.remove("clicked");
+      }, 500);
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
