@@ -111,10 +111,6 @@ main {
   background-color: #555;
 }
 
-.back_to_top_button.clicked {
-  background-color: #FF9800;
-}
-
 .back_to_top_button.show {
   opacity: 1;
   visibility: visible;
