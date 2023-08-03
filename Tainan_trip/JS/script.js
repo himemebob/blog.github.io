@@ -15,8 +15,13 @@ window.addEventListener('load', function() {
     // banner顯示
     banner.style.display = 'block';
 
-    // 浮動橫幅樣式切換
+    
     var scrollPosition = window.scrollY;
+    // 視差滾動效果
+    parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+
+    // 浮動橫幅樣式切換
+    /*
     if (scrollPosition < 500) {
       floatingBanner.style.display = 'none'; // 隱藏
     } else if (scrollPosition < 1000) {
@@ -35,9 +40,7 @@ window.addEventListener('load', function() {
       floatingBanner.classList.add('evening');
       floatingBanner.classList.remove('morning', 'afternoon');
     }
-
-    // 視差滾動效果
-    parallaxImage.style.transform = 'translateY(' + scrollPosition * 0.5 + 'px)';
+    */
   });
 
   // TOP按鈕點擊回到頂部
