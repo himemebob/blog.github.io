@@ -48,8 +48,10 @@ window.addEventListener('load', function() {
       // 在點擊事件0.5秒後，添加一個 CSS class 來刪除按鈕上的 hover 狀態
       setTimeout(function() {
         btn.classList.add("clicked");
-        btn.classList.remove("clicked");
       }, 500);
+      setTimeout(function() {
+        btn.classList.remove("clicked");
+      }, 600);
     });
 
     window.scrollTo({
